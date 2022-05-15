@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <title>Imp3D - Contacto</title>
+    </head>
+    <body>
+        <div class="grilla">
+            <header>
+                <!--barra de navegación-->
+                <nav>
+                    <!--página principal ligada al LOGO en lugar de a una palabra-->
+                    <div class="logo">
+                        <a href="../index.html"><img class="ajusteMedia" src="../img/logo.jpeg" alt="logo del emprendimiento, es una caricatura de un demonio saliendo de una impresora 3d"></a>
+                    </div>
+
+                    <div class="h1">
+                        <h1>Imp3D - Servicios de impresiones</h1>
+                    </div>
+
+                    <ul>
+                        <!--Resto de secciones ligadas a la palabra con el nombre-->
+                        <li>
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="proceso.html">Proceso</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+        
+            <main class="mainContacto">
+                <h2 class="tituloSeccion" id="tituloContacto">Contactanos</h2>
+                <!-- formulario para consultas -->
+                <section class="consultas">
+                    <h3 class="subtituloSeccion">Dejanos tus consultas:</h3>
+                        <form action="#" class="textoFormularios">
+                            <label for="nombre">Nombre:
+                                <input type="text" placeholder="Ingrese su nombre" name="nombre"><br>
+                            </label>
+                            <label for="email">Email:
+                                <input type="email" placeholder="....@gmail.com" required name="email"><br>
+                            </label>
+                            <label for="consulta"> Consulta:<br>
+                                <textarea placeholder="Dejános tu consulta"></textarea>
+                            </label> <br>
+                            <div>¿Quéres recibir info sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1"></div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </form>
+                </section>
+                <!-- formulario para pedidos personalizados -->
+                <section class="pedido">
+                    <h3 class="subtituloSeccion">O haz tu pedido personalizado:</h3>
+                        <form action="#" class="textoFormularios">
+                            <label for="nombre">Nombre:
+                                <input type="text" placeholder="Ingrese su nombre"  name="nombre"><br>
+                            </label>
+                            <label for="email">Email:
+                                <input type="email" placeholder="....@gmail.com" required name="email"><br>
+                            </label>
+                            <label for="Detalle"> Detalle de la pieza:<br>
+                                <textarea placeholder="Ingrese los datos para cotizar"></textarea>
+                            </label> <br>
+                            <div><p>Seleccione tipo de pieza:</p>
+                                <div>Pieza pintada
+                                    <input type="radio" name="lado" value="pieza pintada">
+                                </div>
+                                <div>Pieza sin pintar
+                                    <input type="radio" name="lado" value="pieza sin pintar">
+                                </div>
+                            </div>
+                            <p>Tamaño:</p>
+                            <select name="tamaño" id="tamaño"> 
+                                <option value="chico">chico</option>
+                                <option value="mediano">mediano</option>
+                                <option value="grande">grande</option>
+                            </select>
+                            <div>¿Quéres recibir info sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1"></div>
+                            <input type="submit" value="Pedir cotización">
+                            <input type="reset" value="Borrar">
+                        </form>
+                </section>
+            </main>
+
+            <footer>
+                <!-- logos de las redes sociales con enlaces a las redes sociales -->
+                
+                <!-- link a facebook provisorio hasta que el emprendimiento tenga el propio -->
+                <figure class="logosRedes">
+                    <a href="https://www.facebook.com/Sasu.Funes/"><img class="ajusteMedia" src="../img/facebook.png" alt="logo de facebook"></a>
+                </figure>
+
+                <figure class="logosRedes">
+                    <a href="https://www.instagram.com/imp3dser/?hl=es-la"><img class="ajusteMedia" src="../img/instagram.png" alt="logo de instagram"></a>
+                </figure>
+
+                <!-- link a chat de whatsapp provisorio hasta que el emprendimiento tenga el propio -->
+                <figure class="logosRedes">
+                    <a href="https://wa.me/5493416352193?text=Hola!%20Quisiera%20más%20información."><img class="ajusteMedia" src="../img/whatsapp.png" alt="logo de whatsapp"></a>
+                </figure>
+                
+            </footer>
+        </div>
+    </body>
+</html>

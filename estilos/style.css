@@ -1,0 +1,484 @@
+/*insertado de familia de fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* reseteo */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/*para que las imagenes y videos se adapten al tamaño que despues defina por clase*/
+
+.ajusteMedia{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* fondos */
+
+header{
+    background-color: black;
+    grid-area: header;
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    grid-area: navlogo;
+    display: flex;
+    max-width: 70px;
+}
+
+
+.h1{
+    grid-area: navh1;
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(129, 59, 129);
+}
+
+nav ul{
+    grid-area: navul;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*links sin subrayar + color*/
+
+a{
+    padding: 5px;
+    font-weight: 500;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(129, 59, 129);
+}
+
+/* eliminar bullet de las listas */
+
+ul li{
+    list-style-type: none;
+}
+
+
+main{
+    grid-area: main;
+    display: grid;
+    background-color: rgb(216, 216, 216);
+}
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hotTrending"
+    "nosotros"
+    "proceso";
+}
+
+.proceso{
+    grid-area: proceso;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hotTrending{
+    grid-area: hotTrending;    
+}
+
+.galeriaProductos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "tituloGaleriaP"
+    "galeriaImgProductos"
+    "conoceProductos";
+}
+
+.nosotros{
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resumenIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "avatarPeje avatarPablo"
+    "textoPresentacion textoPresentacion";
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: 
+    " . videoP . ";
+    padding: 5px;
+}
+
+.videoP{
+    display: flex;
+    grid-area: videoP;
+}
+
+.tituloSeccion{
+    padding: 10px;
+    font-weight: 800;
+    font-size: large;
+}
+
+.subtituloSeccion{
+    padding: 10px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.conoceMas{
+    padding: 5px;
+    font-weight: 500;
+    font-size: medium;
+    font-style: italic;
+}
+
+.textoPrincipal{
+    padding: 15px;
+    font-weight: 400;
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+
+#textoPresentacion{
+    grid-area: textoPresentacion;
+}
+
+.textoFormularios{
+    padding: 5px;
+    font-weight: 400;
+    font-size: small;
+}
+
+.imagenesAvatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    max-height: 200px;
+    max-width: 200px;
+    justify-self: center;
+}
+
+#avatarPeje{
+    grid-area: avatarPeje;
+}
+
+#avatarPablo{
+    grid-area: avatarPablo;
+}
+
+.imagenesAvatar figcaption{
+    padding: 2.5px;
+    font-weight: 300;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.tituloGaleriaP{
+    grid-area: tituloGaleriaP;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 800;
+    font-size: large;
+}
+
+.conoceProductos{
+    grid-area: conoceProductos;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: medium;
+    font-style: italic;
+}
+
+.galeriaImgProductos{
+    grid-area: galeriaImgProductos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenesProductos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    padding: 15px;
+}
+
+.imagenesProductos img{
+    border: 2.5px solid black;
+    border-radius: 4%
+}
+
+.imagenesProductos figcaption{
+    display: flex;
+    justify-content: center;
+    padding: 2.5px;
+    font-weight: 700;
+    font-size: small;
+    font-style: italic;
+}
+
+.logosRedes {
+    height: 30x;
+    width: 30px;
+    margin-right: 5px;
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
+    padding: 5px;
+    margin-block-end: 0%;
+    background-color: rgb(129, 59, 129);
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.mainContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "tituloContacto"
+    "consultas"
+    "pedido";
+}
+
+#tituloContacto{
+    grid-area: tituloContacto;
+    display: flex;
+    justify-content: center;
+}
+
+.consultas{
+    grid-area: consultas;
+    display: flex;
+    padding: 15px;
+}
+
+.pedido{
+    grid-area: pedido;
+    display: flex;
+    padding: 15px;
+}
+
+.indexProductos{
+    display: flex;
+    flex-direction: column;
+}
+
+#listaP{
+    display: flex;
+    justify-content: center;
+}
+
+.mainProceso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textos{
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+    grid-template-areas: 
+    ". textosLargos .";
+}
+
+.textosLargos{
+    grid-area: textosLargos;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoConDescripcionA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;;
+}
+
+.fotoConDescripcionB{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 600px){
+    .mainIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "hotTrending hotTrending"
+        "nosotros nosotros"
+        "proceso proceso";
+    }
+
+    .hotTrending{
+        grid-area: hotTrending;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "tituloHT tituloHT" 
+        "galeriaHT galeriaHT"
+        "conoceHT conoceHT";
+    }
+
+    .imagenesProductos{
+        height: 400px;
+    }
+
+    h1{
+        font-size: x-large;
+    }
+
+    .mainContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "tituloContacto tituloContacto"
+        "consultas pedido";
+    }
+
+    .fotoConDescripcionA{
+        flex-wrap:nowrap;
+    }
+    
+    .fotoConDescripcionB{
+        flex-wrap:nowrap;
+    }
+
+    .imagenesAvatar{
+        height: 600px;
+        width: 600px;
+    }
+}
+
+@media (min-width: 780px){
+    .mainIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "proceso proceso proceso"
+        "nosotros nosotros nosotros"
+        "hotTrending hotTrending hotTrending";
+    }
+
+    .resumenIndex{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "avatarPeje textoPresentacion avatarPablo";
+    }
+
+    .imagenesProductos{
+        height: 360px;
+    }
+
+    h1{
+        font-size: xx-large;
+    }
+
+    .tituloSeccion{
+        font-size: larger;
+    }
+
+    .tituloGaleriaP{
+        font-size: larger;
+    }
+
+    .subtituloSeccion{
+        font-size: large;
+    }
+
+    .conoceMas{
+        font-size: large;
+    }
+    .conoceProductos{
+        font-size: large;
+    }
+
+    .textoPrincipal{
+        font-size: medium;
+    }
+
+    .textoFormularios{
+        font-size: medium;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+
+
+    a{
+        font-size: x-large;
+    }
+
+    .tituloSeccion{
+        font-size: x-large;
+    }
+
+    .tituloGaleriaP{
+        font-size: x-large;
+    }
+
+    .subtituloSeccion{
+        font-size: larger;
+    }
+
+    .conoceMas{
+        font-size: larger;
+    }
+
+    .conoceProductos{
+        font-size: larger;
+    }
+
+    nav ul{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+
+}
