@@ -20,21 +20,16 @@
 /* fondos */
 
 header{
-    background-color: black;
     grid-area: header;
     position: sticky;
     top: 0px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .logo{
-    grid-area: navlogo;
     display: flex;
-    max-width: 70px;
+    max-width: 55px;
 }
 
 
@@ -42,34 +37,20 @@ nav{
     grid-area: navh1;
     display: flex;
     align-items: center;
-}
-h1{
     font-weight: 700;
     font-size: larger;
-    color: rgb(129, 59, 129);
+    color: rgb(129, 59, 129, 100%);
 }
 
-nav ul{
-    grid-area: navul;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
 
 /*links sin subrayar + color*/
 
-a{
-    padding: 5px;
+.linksP{
+    padding-left: 5px;
     font-weight: 500;
     font-size: large;
     text-decoration: none;
-    color: rgb(129, 59, 129);
-}
-
-/* eliminar bullet de las listas */
-
-ul li{
-    list-style-type: none;
+    color: rgb(156, 88, 156);
 }
 
 
@@ -367,7 +348,7 @@ footer{
         height: 400px;
     }
 
-    h1{
+    .h1{
         font-size: x-large;
     }
 
@@ -414,7 +395,7 @@ footer{
         height: 360px;
     }
 
-    h1{
+    .h1{
         font-size: xx-large;
     }
 
@@ -451,7 +432,7 @@ footer{
 @media (min-width: 1024px){
 
 
-    a{
+    .linksP{
         font-size: x-large;
     }
 
@@ -475,10 +456,6 @@ footer{
         font-size: larger;
     }
 
-    nav ul{
-        flex-direction: row;
-        align-items: flex-end;
-    }
 
     .imagenesProductos{
         transition: all 2s;
