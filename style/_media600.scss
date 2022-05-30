@@ -1,0 +1,39 @@
+@media (min-width: 600px){
+    .mainIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "hotTrending hotTrending"
+        "nosotros nosotros"
+        "proceso proceso";
+    }
+
+    .imagenesProductos{
+        height: 400px;
+    }
+
+    .h1{
+        font-size: x-large;
+    }
+
+    .mainContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "tituloContacto tituloContacto"
+        "consultas pedido";
+    }
+
+    .fotoConDescripcionA{
+        flex-wrap:nowrap;
+    }
+    
+    .fotoConDescripcionB{
+        flex-wrap:nowrap;
+    }
+
+    .imagenesAvatar{
+        height: 600px;
+        width: 600px;
+    }
+}

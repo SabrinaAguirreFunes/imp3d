@@ -1,0 +1,32 @@
+.textoFormularios{
+    padding: 5px;
+    font-weight: 400;
+    font-size: small;
+}
+
+#tituloContacto{
+    grid-area: tituloContacto;
+    display: flex;
+    justify-content: center;
+}
+
+.consultas{
+    grid-area: consultas;
+    display: flex;
+    padding: 15px;
+}
+
+.pedido{
+    grid-area: pedido;
+    display: flex;
+    padding: 15px;
+}
+
+.mainContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "tituloContacto"
+    "consultas"
+    "pedido";
+}

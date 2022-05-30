@@ -1,0 +1,54 @@
+@media (min-width: 780px){
+    .mainIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "proceso proceso proceso"
+        "nosotros nosotros nosotros"
+        "hotTrending hotTrending hotTrending";
+    }
+
+    .resumenIndex{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "avatarPeje textoPresentacion avatarPablo";
+    }
+
+    .imagenesProductos{
+        height: 360px;
+    }
+
+    .h1{
+        font-size: xx-large;
+    }
+
+    .tituloSeccion{
+        font-size: larger;
+    }
+
+    .tituloGaleriaP{
+        font-size: larger;
+    }
+
+    .subtituloSeccion{
+        font-size: large;
+    }
+
+    .conoceMas{
+        font-size: large;
+    }
+    .conoceProductos{
+        font-size: large;
+    }
+
+    .textoPrincipal{
+        font-size: medium;
+    }
+
+    .textoFormularios{
+        font-size: medium;
+    }
+
+
+}

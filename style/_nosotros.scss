@@ -1,0 +1,17 @@
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoConDescripcionA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;;
+}
+
+.fotoConDescripcionB{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}

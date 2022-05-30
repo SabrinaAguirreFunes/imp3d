@@ -1,0 +1,49 @@
+.proceso{
+    grid-area: proceso;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotros{
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hotTrending{
+    grid-area: hotTrending;    
+}
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hotTrending"
+    "nosotros"
+    "proceso";
+}
+
+
+
+#textoPresentacion{
+    grid-area: textoPresentacion;
+}
+
+#avatarPeje{
+    grid-area: avatarPeje;
+}
+
+#avatarPablo{
+    grid-area: avatarPablo;
+}
+
+.resumenIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "avatarPeje avatarPablo"
+    "textoPresentacion textoPresentacion";
+}
+

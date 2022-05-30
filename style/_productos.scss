@@ -1,0 +1,66 @@
+.indexProductos{
+    display: flex;
+    flex-direction: column;
+}
+
+#listaP{
+    display: flex;
+    justify-content: center;
+}
+
+
+.tituloGaleriaP{
+    grid-area: tituloGaleriaP;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 800;
+    font-size: large;
+}
+
+.conoceProductos{
+    grid-area: conoceProductos;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: medium;
+    font-style: italic;
+}
+
+.galeriaImgProductos{
+    grid-area: galeriaImgProductos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeriaProductos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "tituloGaleriaP"
+    "galeriaImgProductos"
+    "conoceProductos";
+}
+
+.imagenesProductos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    padding: 15px;
+}
+
+.imagenesProductos img{
+    border: 2.5px solid black;
+    border-radius: 4%
+}
+
+.imagenesProductos figcaption{
+    display: flex;
+    justify-content: center;
+    padding: 2.5px;
+    font-weight: 700;
+    font-size: small;
+    font-style: italic;
+}

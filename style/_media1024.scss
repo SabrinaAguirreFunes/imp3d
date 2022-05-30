@@ -1,0 +1,36 @@
+@media (min-width: 1024px){
+
+
+    .linksP{
+        font-size: x-large;
+    }
+
+    .tituloSeccion{
+        font-size: x-large;
+    }
+
+    .tituloGaleriaP{
+        font-size: x-large;
+    }
+
+    .subtituloSeccion{
+        font-size: larger;
+    }
+
+    .conoceMas{
+        font-size: larger;
+    }
+
+    .conoceProductos{
+        font-size: larger;
+    }
+
+
+    .imagenesProductos{
+        transition: all 2s;
+        &:hover{
+            transform: scale(2);
+        }
+    }
+
+}

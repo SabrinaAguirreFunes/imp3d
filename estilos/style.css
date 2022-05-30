@@ -1,467 +1,560 @@
-/*insertado de familia de fuentes*/
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* reseteo */
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Fira Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-/*para que las imagenes y videos se adapten al tamaño que despues defina por clase*/
-
-.ajusteMedia{
-    max-width: 100%;
-    max-height: 100%;
+.ajusteMedia {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-/* fondos */
-
-header{
-    grid-area: header;
-    position: sticky;
-    top: 0px;
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
-
-
-.logo{
-    display: flex;
-    max-width: 55px;
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 55px;
 }
 
-
-.h1{
-    grid-area: navh1;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: larger;
-    color: rgb(129, 59, 129, 100%);
+.h1 {
+  grid-area: navh1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: larger;
+  color: #813b81;
 }
 
-
-/*links sin subrayar + color*/
-
-.linksP{
-    padding-left: 5px;
-    font-weight: 500;
-    font-size: large;
-    text-decoration: none;
-    color: rgb(156, 88, 156);
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -ms-grid;
+  display: grid;
+  background-color: #d8d8d8;
 }
 
-
-main{
-    grid-area: main;
-    display: grid;
-    background-color: rgb(216, 216, 216);
+.linksP {
+  padding-left: 5px;
+  font-weight: 500;
+  font-size: large;
+  text-decoration: none;
+  color: #9c589c;
 }
 
-.mainIndex{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "hotTrending"
-    "nosotros"
-    "proceso";
+.tituloSeccion {
+  padding: 10px;
+  font-weight: 800;
+  font-size: large;
 }
 
-.proceso{
-    grid-area: proceso;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.subtituloSeccion {
+  padding: 10px;
+  font-weight: 600;
+  font-size: medium;
 }
 
-#hotTrending{
-    grid-area: hotTrending;    
+.conoceMas {
+  padding: 5px;
+  font-weight: 500;
+  font-size: medium;
+  font-style: italic;
 }
 
-.galeriaProductos{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "tituloGaleriaP"
-    "galeriaImgProductos"
-    "conoceProductos";
+.textoPrincipal {
+  padding: 15px;
+  font-weight: 400;
+  font-size: small;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nosotros{
-    grid-area: nosotros;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.videos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+      grid-template-areas: " . videoP . ";
+  padding: 5px;
 }
 
-.resumenIndex{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "avatarPeje avatarPablo"
-    "textoPresentacion textoPresentacion";
+.videoP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: videoP;
 }
 
-.videos{
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-areas: 
-    " . videoP . ";
-    padding: 5px;
+.imagenesAvatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  max-height: 200px;
+  max-width: 200px;
+  justify-self: center;
 }
 
-.videoP{
-    display: flex;
-    grid-area: videoP;
-}
-
-.tituloSeccion{
-    padding: 10px;
-    font-weight: 800;
-    font-size: large;
-}
-
-.subtituloSeccion{
-    padding: 10px;
-    font-weight: 600;
-    font-size: medium;
-}
-
-.conoceMas{
-    padding: 5px;
-    font-weight: 500;
-    font-size: medium;
-    font-style: italic;
-}
-
-.textoPrincipal{
-    padding: 15px;
-    font-weight: 400;
-    font-size: small;
-    display: flex;
-    align-items: center;
-}
-
-#textoPresentacion{
-    grid-area: textoPresentacion;
-}
-
-.textoFormularios{
-    padding: 5px;
-    font-weight: 400;
-    font-size: small;
-}
-
-.imagenesAvatar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    max-height: 200px;
-    max-width: 200px;
-    justify-self: center;
-}
-
-#avatarPeje{
-    grid-area: avatarPeje;
-}
-
-#avatarPablo{
-    grid-area: avatarPablo;
-}
-
-.imagenesAvatar figcaption{
-    padding: 2.5px;
-    font-weight: 300;
-    font-size: smaller;
-    font-style: italic;
-}
-
-.tituloGaleriaP{
-    grid-area: tituloGaleriaP;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-weight: 800;
-    font-size: large;
-}
-
-.conoceProductos{
-    grid-area: conoceProductos;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    font-weight: 500;
-    font-size: medium;
-    font-style: italic;
-}
-
-.galeriaImgProductos{
-    grid-area: galeriaImgProductos;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.imagenesProductos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: center;
-    padding: 15px;
-}
-
-.imagenesProductos img{
-    border: 2.5px solid black;
-    border-radius: 4%
-}
-
-.imagenesProductos figcaption{
-    display: flex;
-    justify-content: center;
-    padding: 2.5px;
-    font-weight: 700;
-    font-size: small;
-    font-style: italic;
+.imagenesAvatar figcaption {
+  padding: 2.5px;
+  font-weight: 300;
+  font-size: smaller;
+  font-style: italic;
 }
 
 .logosRedes {
-    height: 30x;
-    width: 30px;
-    margin-right: 5px;
+  height: 30x;
+  width: 30px;
+  margin-right: 5px;
 }
 
-footer{
-    display: flex;
-    grid-area: footer;
-    padding: 5px;
-    margin-block-end: 0%;
-    background-color: rgb(129, 59, 129);
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  padding: 5px;
+  -webkit-margin-after: 0%;
+          margin-block-end: 0%;
+  background-color: #813b81;
 }
 
-.grilla{
+.grilla {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "main" "footer";
+}
+
+.indexProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#listaP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tituloGaleriaP {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tituloGaleriaP;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  font-weight: 800;
+  font-size: large;
+}
+
+.conoceProductos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: conoceProductos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  font-weight: 500;
+  font-size: medium;
+  font-style: italic;
+}
+
+.galeriaImgProductos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: galeriaImgProductos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.galeriaProductos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "tituloGaleriaP" "galeriaImgProductos" "conoceProductos";
+}
+
+.imagenesProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: center;
+      flex-wrap: center;
+  padding: 15px;
+}
+
+.imagenesProductos img {
+  border: 2.5px solid black;
+  border-radius: 4%;
+}
+
+.imagenesProductos figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5px;
+  font-weight: 700;
+  font-size: small;
+  font-style: italic;
+}
+
+.proceso {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: proceso;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosotros {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nosotros;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hotTrending {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hotTrending;
+}
+
+.mainIndex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "hotTrending" "nosotros" "proceso";
+}
+
+#textoPresentacion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: textoPresentacion;
+}
+
+#avatarPeje {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: avatarPeje;
+}
+
+#avatarPablo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: avatarPablo;
+}
+
+.resumenIndex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "avatarPeje avatarPablo" "textoPresentacion textoPresentacion";
+}
+
+.textoFormularios {
+  padding: 5px;
+  font-weight: 400;
+  font-size: small;
+}
+
+#tituloContacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tituloContacto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.consultas {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: consultas;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+.pedido {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pedido;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+.mainContacto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "tituloContacto" "consultas" "pedido";
+}
+
+.mainNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotoConDescripcionA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fotoConDescripcionB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainProceso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3% 94% 3%;
+      grid-template-columns: 3% 94% 3%;
+      grid-template-areas: ". textosLargos .";
+}
+
+.textosLargos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: textosLargos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .mainIndex {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-
-.mainContacto{
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hotTrending hotTrending" "nosotros nosotros" "proceso proceso";
+  }
+  .imagenesProductos {
+    height: 400px;
+  }
+  .h1 {
+    font-size: x-large;
+  }
+  .mainContacto {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "tituloContacto"
-    "consultas"
-    "pedido";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "tituloContacto tituloContacto" "consultas pedido";
+  }
+  .fotoConDescripcionA {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .fotoConDescripcionB {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .imagenesAvatar {
+    height: 600px;
+    width: 600px;
+  }
 }
 
-#tituloContacto{
-    grid-area: tituloContacto;
-    display: flex;
-    justify-content: center;
-}
-
-.consultas{
-    grid-area: consultas;
-    display: flex;
-    padding: 15px;
-}
-
-.pedido{
-    grid-area: pedido;
-    display: flex;
-    padding: 15px;
-}
-
-.indexProductos{
-    display: flex;
-    flex-direction: column;
-}
-
-#listaP{
-    display: flex;
-    justify-content: center;
-}
-
-.mainProceso{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.textos{
+@media (min-width: 780px) {
+  .mainIndex {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 3% 94% 3%;
-    grid-template-areas: 
-    ". textosLargos .";
-}
-
-.textosLargos{
-    grid-area: textosLargos;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.mainNosotros{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fotoConDescripcionA{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;;
-}
-
-.fotoConDescripcionB{
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-
-@media (min-width: 600px){
-    .mainIndex{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "hotTrending hotTrending"
-        "nosotros nosotros"
-        "proceso proceso";
-    }
-
-    .hotTrending{
-        grid-area: hotTrending;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "tituloHT tituloHT" 
-        "galeriaHT galeriaHT"
-        "conoceHT conoceHT";
-    }
-
-    .imagenesProductos{
-        height: 400px;
-    }
-
-    .h1{
-        font-size: x-large;
-    }
-
-    .mainContacto{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "tituloContacto tituloContacto"
-        "consultas pedido";
-    }
-
-    .fotoConDescripcionA{
-        flex-wrap:nowrap;
-    }
-    
-    .fotoConDescripcionB{
-        flex-wrap:nowrap;
-    }
-
-    .imagenesAvatar{
-        height: 600px;
-        width: 600px;
-    }
-}
-
-@media (min-width: 780px){
-    .mainIndex{
-        display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "proceso proceso proceso"
-        "nosotros nosotros nosotros"
-        "hotTrending hotTrending hotTrending";
-    }
-
-    .resumenIndex{
-        display: grid;
+        grid-template-areas: "proceso proceso proceso" "nosotros nosotros nosotros" "hotTrending hotTrending hotTrending";
+  }
+  .resumenIndex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 1fr;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-areas: 
-        "avatarPeje textoPresentacion avatarPablo";
-    }
-
-    .imagenesProductos{
-        height: 360px;
-    }
-
-    .h1{
-        font-size: xx-large;
-    }
-
-    .tituloSeccion{
-        font-size: larger;
-    }
-
-    .tituloGaleriaP{
-        font-size: larger;
-    }
-
-    .subtituloSeccion{
-        font-size: large;
-    }
-
-    .conoceMas{
-        font-size: large;
-    }
-    .conoceProductos{
-        font-size: large;
-    }
-
-    .textoPrincipal{
-        font-size: medium;
-    }
-
-    .textoFormularios{
-        font-size: medium;
-    }
-
-
+        grid-template-areas: "avatarPeje textoPresentacion avatarPablo";
+  }
+  .imagenesProductos {
+    height: 360px;
+  }
+  .h1 {
+    font-size: xx-large;
+  }
+  .tituloSeccion {
+    font-size: larger;
+  }
+  .tituloGaleriaP {
+    font-size: larger;
+  }
+  .subtituloSeccion {
+    font-size: large;
+  }
+  .conoceMas {
+    font-size: large;
+  }
+  .conoceProductos {
+    font-size: large;
+  }
+  .textoPrincipal {
+    font-size: medium;
+  }
+  .textoFormularios {
+    font-size: medium;
+  }
 }
 
-@media (min-width: 1024px){
-
-
-    .linksP{
-        font-size: x-large;
-    }
-
-    .tituloSeccion{
-        font-size: x-large;
-    }
-
-    .tituloGaleriaP{
-        font-size: x-large;
-    }
-
-    .subtituloSeccion{
-        font-size: larger;
-    }
-
-    .conoceMas{
-        font-size: larger;
-    }
-
-    .conoceProductos{
-        font-size: larger;
-    }
-
-
-    .imagenesProductos{
-        transition: all 2s;
-    }
-
-    .imagenesProductos:hover{
-        transform: scale(2);
-    }
+@media (min-width: 1024px) {
+  .linksP {
+    font-size: x-large;
+  }
+  .tituloSeccion {
+    font-size: x-large;
+  }
+  .tituloGaleriaP {
+    font-size: x-large;
+  }
+  .subtituloSeccion {
+    font-size: larger;
+  }
+  .conoceMas {
+    font-size: larger;
+  }
+  .conoceProductos {
+    font-size: larger;
+  }
+  .imagenesProductos {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+  .imagenesProductos:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
+/*# sourceMappingURL=style.css.map */
