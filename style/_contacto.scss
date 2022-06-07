@@ -1,7 +1,6 @@
 .textoFormularios{
+    @include fonts (400, small);
     padding: 5px;
-    font-weight: 400;
-    font-size: small;
 }
 
 #tituloContacto{

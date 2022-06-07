@@ -11,6 +11,11 @@
     max-height: 100%;
 }
 
+@mixin fonts ($weight, $size){
+    font-weight: $weight;
+    font-size: $size;
+}
+
 header{
     grid-area: header;
     position: sticky;
@@ -24,11 +29,10 @@ header{
 
 
 .h1{
+    @include fonts (700, larger);
     grid-area: navh1;
     display: flex;
     align-items: center;
-    font-weight: 700;
-    font-size: larger;
     color: $color1;
 }
 
@@ -39,37 +43,32 @@ main{
 }
 
 .linksP{
+    @include fonts (500, large);
     padding-left: 5px;
-    font-weight: 500;
-    font-size: large;
     text-decoration: none;
     color: $color2;
 }
 
 
 .tituloSeccion{
+    @include fonts (800, large);
     padding: 10px;
-    font-weight: 800;
-    font-size: large;
 }
 
 .subtituloSeccion{
+    @include fonts (600, medium);
     padding: 10px;
-    font-weight: 600;
-    font-size: medium;
 }
 
 .conoceMas{
+    @include fonts (500, medium);
     padding: 5px;
-    font-weight: 500;
-    font-size: medium;
     font-style: italic;
 }
 
 .textoPrincipal{
+    @include fonts (400, small);
     padding: 15px;
-    font-weight: 400;
-    font-size: small;
     display: flex;
     align-items: center;
 }
@@ -100,9 +99,8 @@ main{
 }
 
 .imagenesAvatar figcaption{
+    @include fonts (300, smaller);
     padding: 2.5px;
-    font-weight: 300;
-    font-size: smaller;
     font-style: italic;
 }
 

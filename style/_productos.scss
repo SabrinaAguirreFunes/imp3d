@@ -10,22 +10,17 @@
 
 
 .tituloGaleriaP{
+    @extend.tituloSeccion;
     grid-area: tituloGaleriaP;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    font-weight: 800;
-    font-size: large;
 }
 
 .conoceProductos{
+    @extend.conoceMas;
     grid-area: conoceProductos;
     display: flex;
     justify-content: center;
-    padding: 5px;
-    font-weight: 500;
-    font-size: medium;
-    font-style: italic;
 }
 
 .galeriaImgProductos{
@@ -57,10 +52,31 @@
 }
 
 .imagenesProductos figcaption{
+    @include fonts (700, small);
     display: flex;
     justify-content: center;
     padding: 2.5px;
-    font-weight: 700;
-    font-size: small;
     font-style: italic;
 }
+
+.botones-productos{
+    display: flex;    
+    justify-content: space-evenly;
+}
+
+$productos:(
+    tradicional: $color3,
+    personalizado: $color2,
+    hotTrending: $color1,
+);
+
+@each $producto, $color in $productos {
+    .btn--#{$producto}{
+        background-color: $color;
+        border: none;
+        color: white;
+        padding: 5px 5px 5px 5px;
+        border-radius: 3px;
+    }
+}
+

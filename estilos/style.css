@@ -27,6 +27,8 @@ header {
 }
 
 .h1 {
+  font-weight: 700;
+  font-size: larger;
   grid-area: navh1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,8 +36,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 700;
-  font-size: larger;
   color: #813b81;
 }
 
@@ -49,36 +49,36 @@ main {
 }
 
 .linksP {
-  padding-left: 5px;
   font-weight: 500;
   font-size: large;
+  padding-left: 5px;
   text-decoration: none;
   color: #9c589c;
 }
 
-.tituloSeccion {
-  padding: 10px;
+.tituloSeccion, .tituloGaleriaP {
   font-weight: 800;
   font-size: large;
+  padding: 10px;
 }
 
 .subtituloSeccion {
-  padding: 10px;
   font-weight: 600;
   font-size: medium;
+  padding: 10px;
 }
 
-.conoceMas {
-  padding: 5px;
+.conoceMas, .conoceProductos {
   font-weight: 500;
   font-size: medium;
+  padding: 5px;
   font-style: italic;
 }
 
 .textoPrincipal {
-  padding: 15px;
   font-weight: 400;
   font-size: small;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,9 +126,9 @@ main {
 }
 
 .imagenesAvatar figcaption {
-  padding: 2.5px;
   font-weight: 300;
   font-size: smaller;
+  padding: 2.5px;
   font-style: italic;
 }
 
@@ -188,9 +188,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
-  font-weight: 800;
-  font-size: large;
 }
 
 .conoceProductos {
@@ -203,10 +200,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px;
-  font-weight: 500;
-  font-size: medium;
-  font-style: italic;
 }
 
 .galeriaImgProductos {
@@ -250,6 +243,8 @@ footer {
 }
 
 .imagenesProductos figcaption {
+  font-weight: 700;
+  font-size: small;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,9 +252,40 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2.5px;
-  font-weight: 700;
-  font-size: small;
   font-style: italic;
+}
+
+.botones-productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.btn--tradicional {
+  background-color: #b17fb1;
+  border: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+}
+
+.btn--personalizado {
+  background-color: #9c589c;
+  border: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+}
+
+.btn--hotTrending {
+  background-color: #813b81;
+  border: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
 }
 
 .proceso {
@@ -336,9 +362,9 @@ footer {
 }
 
 .textoFormularios {
-  padding: 5px;
   font-weight: 400;
   font-size: small;
+  padding: 5px;
 }
 
 #tituloContacto {
@@ -506,19 +532,13 @@ footer {
   .h1 {
     font-size: xx-large;
   }
-  .tituloSeccion {
-    font-size: larger;
-  }
-  .tituloGaleriaP {
+  .tituloSeccion, .tituloGaleriaP {
     font-size: larger;
   }
   .subtituloSeccion {
     font-size: large;
   }
-  .conoceMas {
-    font-size: large;
-  }
-  .conoceProductos {
+  .conoceMas, .conoceProductos {
     font-size: large;
   }
   .textoPrincipal {
@@ -531,21 +551,15 @@ footer {
 
 @media (min-width: 1024px) {
   .linksP {
-    font-size: x-large;
+    font-size: larger;
   }
-  .tituloSeccion {
-    font-size: x-large;
-  }
-  .tituloGaleriaP {
+  .tituloSeccion, .tituloGaleriaP {
     font-size: x-large;
   }
   .subtituloSeccion {
     font-size: larger;
   }
-  .conoceMas {
-    font-size: larger;
-  }
-  .conoceProductos {
+  .conoceMas, .conoceProductos {
     font-size: larger;
   }
   .imagenesProductos {
