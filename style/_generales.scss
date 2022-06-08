@@ -57,7 +57,7 @@ main{
 
 .subtituloSeccion{
     @include fonts (600, medium);
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .conoceMas{
@@ -68,7 +68,7 @@ main{
 
 .textoPrincipal{
     @include fonts (400, small);
-    padding: 15px;
+    padding: 5px 15px;
     display: flex;
     align-items: center;
 }
