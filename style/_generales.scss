@@ -107,9 +107,6 @@ main{
 
 
 .logosRedes {
-    display: flex;    
-    justify-content: center;
-    align-items: center;
     height: 30x;
     width: 30px;
     margin-right: 5px;
@@ -118,7 +115,6 @@ main{
 footer{
     display: flex;
     justify-content: center;
-    align-content: center;
     grid-area: footer;
     padding: 5px;
     margin-block-end: 0%;

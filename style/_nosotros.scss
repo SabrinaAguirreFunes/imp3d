@@ -4,14 +4,17 @@
     align-items: center;
 }
 
-.fotoConDescripcionA{
+.fotoConDescripcion{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.fotoConDescripcionA{
+    @extend.fotoConDescripcion;
     flex-direction: row;
-    flex-wrap: wrap;;
 }
 
 .fotoConDescripcionB{
-    display: flex;
+    @extend.fotoConDescripcion;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
 }
