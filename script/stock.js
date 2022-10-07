@@ -1,4 +1,4 @@
-const precioXml = 30;
+const precioXml = 40;
 
 const tradicionales = [
     {
@@ -423,7 +423,7 @@ const personalizados = [
         nombre: "Michi Espadachín",
         altura: 5,
         pintada: false,
-        imagen: '../img/ejercitoMichis.jpeg',
+        imagen: '../img/michiEspada.jpeg',
         hotTrending: false,
         consumo: 0,
     },
@@ -512,5 +512,3 @@ const personalizados = [
 
 console.log(personalizados);
 console.log(tradicionales);
-
-// export { tradicionales, personalizados };
