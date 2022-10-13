@@ -28,19 +28,19 @@ const sumarProducto = (productoId) => {
 
 };
 
-// const sumarProductoHT = (productoId) => {
+const sumarProductoHT = (productoId) => {
 
-//     if (localStorage.getItem('carrito')) {
-//         carrito = obtenerCarritoStorage();
-//     }
+    if (localStorage.getItem('carrito')) {
+        carrito = obtenerCarritoStorage();
+    }
 
-//     const productoAgregadoHT = tradicionalesHT.find(tradicional => tradicional.id === productoId);
+    const productoAgregadoHT = tradicionalesHT.find(tradicional => tradicional.id === productoId);
 
-//     carrito.push(productoAgregadoHT)
+    carrito.push(productoAgregadoHT)
 
-//     guardarCarritoStorage(carrito)
+    guardarCarritoStorage(carrito)
 
-// };
+};
 
 for (let tradicional of tradicionalesHT){
     let botonAgregar = document.getElementById(`${tradicional.id}Agregar`);
