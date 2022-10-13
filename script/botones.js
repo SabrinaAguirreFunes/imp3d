@@ -28,25 +28,31 @@ const sumarProducto = (productoId) => {
 
 };
 
-const sumarProductoHT = (productoId) => {
+// const sumarProductoHT = (productoId) => {
 
-    if (localStorage.getItem('carrito')) {
-        carrito = obtenerCarritoStorage();
-    }
+//     if (localStorage.getItem('carrito')) {
+//         carrito = obtenerCarritoStorage();
+//     }
 
-    const productoAgregadoHT = tradicionalesHT.find(tradicional => tradicional.id === productoId);
+//     const productoAgregadoHT = tradicionalesHT.find(tradicional => tradicional.id === productoId);
 
-    carrito.push(productoAgregadoHT)
+//     carrito.push(productoAgregadoHT)
 
-    guardarCarritoStorage(carrito)
+//     guardarCarritoStorage(carrito)
 
-};
+// };
 
 for (let tradicional of tradicionalesHT){
     let botonAgregar = document.getElementById(`${tradicional.id}Agregar`);
     botonAgregar.onclick = () => {
         sumarProductoHT(tradicional.id);
-        alert(`Se ha agregado ${tradicional.nombre} al carrito`);
+        Toastify({
+            text: `Se ha agregado ${tradicional.nombre} al carrito`,
+            style: {
+                background: "linear-gradient(to right, #B17FB1, #813B81)",
+            },
+            duration: 3000,
+            }).showToast();
     }
 }
 
@@ -54,7 +60,13 @@ for (let tradicional of tradicionales){
     let botonAgregar = document.getElementById(`${tradicional.id}Agregar`);
     botonAgregar.onclick = () => {
         sumarProducto(tradicional.id);
-        alert(`Se ha agregado ${tradicional.nombre} al carrito`);
+        Toastify({
+            text: `Se ha agregado ${tradicional.nombre} al carrito`,
+            style: {
+                background: "linear-gradient(to right, #B17FB1, #813B81)",
+            },
+            duration: 3000
+            }).showToast();
     }
 }
 
