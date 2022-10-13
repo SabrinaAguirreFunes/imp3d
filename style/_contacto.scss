@@ -9,6 +9,12 @@
     justify-content: center;
 }
 
+#instagram{
+    grid-area: instagram;
+    display: flex;
+    justify-content: center;
+}
+
 .consultas{
     grid-area: consultas;
     display: flex;
@@ -26,6 +32,7 @@
     grid-template-columns: 1fr;
     grid-template-areas:
     "tituloContacto"
+    "instagram"
     "consultas"
     "pedido";
 }

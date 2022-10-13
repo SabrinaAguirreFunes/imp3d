@@ -1,0 +1,33 @@
+#tituloCarrito{
+    @extend.tituloSeccion;
+    grid-area: tituloCarrito;
+}
+
+#conoceCarrito{
+    @extend.conoceMas;
+    grid-area: conoceCarrito;
+}
+
+#carritoContenedor{
+    grid-area: carritoContenedor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#carritoTotales{
+    grid-area: carritoTotales;
+
+}
+
+
+#mainCarrito{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "tituloCarrito"
+    "carritoContenedor"
+    "carritoTotales"
+    "conoceCarrito"
+    ;
+}
