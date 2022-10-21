@@ -1,0 +1,173 @@
+[
+    {
+        "idP": 1,
+        "nombre": "Kairos",
+        "altura": 25,
+        "pintada": true,
+        "imagen": "./img/kairos.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 2,
+        "nombre": "Nemesis (clasico)",
+        "altura": 20,
+        "pintada": true,
+        "imagen": "./img/nemesisClasico.jpeg",
+        "hotTrending": true,
+        "consumo": 0
+    },
+    {
+        "idP": 3,
+        "nombre": "Alastor",
+        "altura": 15,
+        "pintada": true,
+        "imagen": "./img/alastor.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 4,
+        "nombre": "Jill",
+        "altura": 13,
+        "pintada": true,
+        "imagen": "./img/jill.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 5,
+        "nombre": "Ejército Esqueletos",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/ejercito1.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 6,
+        "nombre": "Esqueleto Ballestero",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/esqueletoBallesta.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 7,
+        "nombre": "Esqueleto Lancero",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/esqueletoLanza.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 8,
+        "nombre": "La Muerte Esquelética",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/esqueletoMuerte.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 9,
+        "nombre": "Ejército Michis",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/ejercitoMichis.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 10,
+        "nombre": "Michi Espadachín",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiEspada.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 11,
+        "nombre": "Michi con Estandarte",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiBandera.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 12,
+        "nombre": "Michi con Hacha",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiHacha.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 13,
+        "nombre": "Michi Cervecero",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiBarril.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 14,
+        "nombre": "Michi Cocinero",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiCocinero.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 15,
+        "nombre": "Michi Lancero",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiLanza.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 16,
+        "nombre": "Michi Mago-Guerrero",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiMago.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 17,
+        "nombre": "Michi Guerrero",
+        "altura": 5,
+        "pintada": false,
+        "imagen": "./img/michiPeleador.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 18,
+        "nombre": "Androide 18",
+        "altura": 30,
+        "pintada": true,
+        "imagen": "./img/androide18.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    },
+    {
+        "idP": 19,
+        "nombre": "Jhin",
+        "altura": 30,
+        "pintada": true,
+        "imagen": "./img/jhin.jpeg",
+        "hotTrending": false,
+        "consumo": 0
+    }
+]

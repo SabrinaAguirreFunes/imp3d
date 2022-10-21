@@ -1,14 +1,11 @@
-// Creacion de tercer categoria de productos mas vendidos
-
-const tradicionalesHT = tradicionales.filter((tradicional) => tradicional.hotTrending === true)
-
-const personalizadosHT = personalizados.filter((personalizado) => personalizado.hotTrending === true)
-
 // Modificacion del DOM para mostrar el catalogo dividido en las categorias correspondientes
 
-function mostrarTradicionales(){
+const mostrarTradicionales = async () =>{
     const galeriaTradicionales=document.getElementById("galeriaTradicionales");
 
+    const tradicionales = await obtenerTradicionales();
+
+    
     for (let tradicional of tradicionales){
         let divTradicionales = document.createElement('div');
         divTradicionales.className=('imagenesProductos');
@@ -25,11 +22,43 @@ function mostrarTradicionales(){
         galeriaTradicionales.appendChild(divTradicionales);
     }
 
+// Agregar funcionalidad a los botones para agregar productos al carrito desde las distintas secciones
+
+    const sumarProducto = (productoId) => {
+
+        if (localStorage.getItem('carrito')) {
+            carrito = obtenerCarritoStorage();
+        }
+    
+        const productoAgregado = tradicionales.find(tradicional => tradicional.id === productoId);
+    
+        carrito.push(productoAgregado)
+    
+        guardarCarritoStorage(carrito)
+    
+    };
+
+    for (let tradicional of tradicionales){
+        let botonAgregar = document.getElementById(`${tradicional.id}Agregar`);
+        botonAgregar.onclick = () => {
+            sumarProducto(tradicional.id);
+            Toastify({
+                text: `Se ha agregado ${tradicional.nombre} al carrito`,
+                style: {
+                    background: "linear-gradient(to right, #B17FB1, #813B81)",
+                },
+                duration: 3000
+                }).showToast();
+        }
+    }
+
 }
 
 
-function mostrarPersonalizados(){
+const mostrarPersonalizados = async () => {
     const galeriaPersonalizados=document.getElementById("galeriaPersonalizados");
+
+    const personalizados = await obtenerPersonalizados();
 
     
     for (let personalizado of personalizados){
@@ -48,9 +77,20 @@ function mostrarPersonalizados(){
 
 }
 
+// Creacion de filtros y modificacion de DOM para mostrar una tercer categoria con los productos mas vendidos
 
-function mostrarHT(){
+const mostrarHT = async () => {
     const galeriaHT=document.getElementById("galeriaHT");
+
+    const tradicionales = await obtenerTradicionales();
+
+    const personalizados = await obtenerPersonalizados();
+
+    // Creacion de tercer categoria de productos mas vendidos
+
+    const tradicionalesHT = tradicionales.filter((tradicional) => tradicional.hotTrending === true)
+
+    const personalizadosHT = personalizados.filter((personalizado) => personalizado.hotTrending === true)
 
     for (let tradicional of tradicionalesHT){
         let divTradicionalesHT = document.createElement('div');
@@ -82,6 +122,35 @@ function mostrarHT(){
         galeriaHT.appendChild(divPersonalizadosHT);
     }
 
+// Agregar funcionalidad a los botones para agregar productos al carrito desde las distintas secciones
+
+    const sumarProductoHT = (productoId) => {
+
+        if (localStorage.getItem('carrito')) {
+            carrito = obtenerCarritoStorage();
+        }
+
+        const productoAgregadoHT = tradicionalesHT.find(tradicional => tradicional.id === productoId);
+
+        carrito.push(productoAgregadoHT)
+
+        guardarCarritoStorage(carrito)
+
+    };
+
+    for (let tradicional of tradicionalesHT){
+        let botonAgregar = document.getElementById(`${tradicional.id}Agregar`);
+        botonAgregar.onclick = () => {
+            sumarProductoHT(tradicional.id);
+            Toastify({
+                text: `Se ha agregado ${tradicional.nombre} al carrito`,
+                style: {
+                    background: "linear-gradient(to right, #B17FB1, #813B81)",
+                },
+                duration: 3000,
+                }).showToast();
+        }
+    }
 }
 
 
