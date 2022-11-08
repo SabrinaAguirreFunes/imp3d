@@ -61,7 +61,8 @@ function totalCarrito (){
     divCarritoTotales.className = (`totalCarrito`);
     divCarritoTotales.innerHTML = `<p>Cantidad de productos: ${carrito.length}</p>
     <p>Total: $ ${precioTotal}</p>
-    <button id="vaciarCarrito">Vaciar carrito</button>`;
+    <button id="vaciarCarrito">Vaciar carrito</button>
+    <button id="finalizarCompra">Finalizar compra</button>`;
 
     carritoTotales.appendChild(divCarritoTotales);
 
@@ -89,5 +90,24 @@ const vaciarCarrito = () => {
     }
 
     guardarCarritoStorage(carrito)
+}
+
+
+// Agregar funcionalidad al boton finalizar compra limpiando todos los productos del carrito
+
+
+let botonFinalizarCompra = document.getElementById(`finalizarCompra`);
+botonFinalizarCompra.onclick = () => {
+    Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Gracias por su compra!',
+        showConfirmButton: true,
+    }).then((result) => {
+        if (result.isConfirmed) {
+        vaciarCarrito();
+        location.reload();
+        }
+    })
 
 }

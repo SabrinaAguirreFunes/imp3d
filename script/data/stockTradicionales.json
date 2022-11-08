@@ -253,10 +253,10 @@
     },
     {
         "id": 29,
-        "nombre": "Mogu Mogu",
+        "nombre": "Gomu Gomu",
         "altura": 5,
         "pintada": true,
-        "imagen": "./img/mogumogu.jpeg",
+        "imagen": "./img/gomugomu.jpeg",
         "hotTrending": false,
         "consumo": 5
     },
